@@ -1,0 +1,5 @@
+flutter_native_splash:
+  color: "#FFFFFF"
+  web: true
+  image_web: assets/images/logo4x.png
+  web_image_mode: center
