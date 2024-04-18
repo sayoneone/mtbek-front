@@ -11,7 +11,7 @@ RUN cd $FLUTTER_SDK
 ENV PATH="$FLUTTER_SDK/bin:$FLUTTER_SDK/bin/cache/dart-sdk/bin:${PATH}"
 ENV FLUTTER_WEB true
 
-RUN flutter channel master && flutter downgrade 3.16.4
+RUN flutter channel master
 RUN flutter doctor -v
 
 RUN mkdir $APP
