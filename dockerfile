@@ -2,7 +2,7 @@
 FROM alpine:latest AS build-env
 
 # install all needed stuff
-RUN apk add curl git unzip
+RUN apk add curl git unzip bash
 
 # define variables
 ARG FLUTTER_SDK=/usr/local/flutter
