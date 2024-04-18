@@ -34,7 +34,7 @@ dependencies:
   hive: ^2.2.3
   mask_text_input_formatter: ^2.5.0
   flutter_keyboard_visibility: ^5.4.1
-  url_launcher: ^6.2.1
+  url_launcher: ^6.1.13
   flutter_svg: ^2.0.10+1
   image_picker: ^1.0.4
   skeleton_text: ^3.0.1
