@@ -2,7 +2,8 @@
 FROM debian:latest AS build-env
 
 # install all needed stuff
-RUN apt-get install curl git unzip bash
+RUN apt-get update
+RUN apt-get install -y curl git unzip
 
 # define variables
 ARG FLUTTER_SDK=/usr/local/flutter
