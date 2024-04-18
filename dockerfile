@@ -1,6 +1,6 @@
-FROM debian:latest AS build-env
+FROM alpine:latest AS build-env
 
-RUN apt-get update && apt-get install -y curl git unzip nano net-tools && apt-get clean
+RUN apk add git bash
 
 ARG FLUTTER_SDK=/usr/local/flutter
 ARG APP=/app/
