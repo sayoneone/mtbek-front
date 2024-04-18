@@ -1,6 +1,6 @@
 FROM alpine:latest AS build-env
 
-RUN apk add git bash
+RUN apk add git bash curl
 
 ARG FLUTTER_SDK=/usr/local/flutter
 ARG APP=/app/
