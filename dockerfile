@@ -1,9 +1,8 @@
 # Environemnt to install flutter and build web
-FROM debian:latest AS build-env
+FROM alpine:latest AS build-env
 
 # install all needed stuff
-RUN apt-get update
-RUN apt-get install -y curl git unzip
+RUN apk add curl git unzip
 
 # define variables
 ARG FLUTTER_SDK=/usr/local/flutter
