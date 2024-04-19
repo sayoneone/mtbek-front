@@ -42,6 +42,10 @@ FROM nginx:1.25.2-alpine
 # copy the info of the builded web app to nginx
 COPY --from=build-env /app/build/web /usr/share/nginx/html
 
-# Expose and run nginx
+COPY /docker/dev/nginx/ssl/private_key.pem /etc/nginx/ssl/private_key.pem
+COPY /docker/dev/nginx/ssl/certificate.pem /etc/nginx/ssl/certificate.pem
+
+COPY /docker/dev/nginx/nginx.conf /etc/nginx/nginx.conf
+
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
