@@ -79,7 +79,7 @@ jobs:
         id: auth
         uses: 'google-github-actions/auth@v0'
         with:
-          credentials_json: '${{GOOGE_CRED_JSON}}'
+          credentials_json: '$GOOGE_CRED_JSON'
 
       - name: Deploy to Cloud Run
         id: deploy
